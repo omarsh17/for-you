@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read meee </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #078079;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            white-space: pre-wrap; /* Preserve line breaks */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Press the Button!</h1>
+<button id="Button">for you (press meeee) </button>
+<div id="output"></div>
+
+<script>
+    document.getElementById('Button').addEventListener('click', function() {
+        const outputDiv = document.getElementById('output');
+        outputDiv.textContent = 'I miss you :(  \n'.repeat(1);
+    });
+</script>
+
+</body>
+</html>
